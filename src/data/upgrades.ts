@@ -1519,7 +1519,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'leaves',
-      calc: () => 3,
+      calc: () => 5,
     }),
   },
   "F\\2": {
@@ -1538,7 +1538,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'leaves',
-      calc: () => 5,
+      calc: () => 12,
     }),
   },
   "F\\4": {
@@ -1564,7 +1564,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'seeds',
-      calc: () => 2.5,
+      calc: () => 5,
     }),
   },
   "F\\6": {
@@ -1583,7 +1583,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'fruits',
-      calc: () => 2,
+      calc: () => 10,
     }),
   },
   "F\\8": {
@@ -1596,7 +1596,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'age',
-      calc: () => 2,
+      calc: () => 6,
     }),
   },
   "F\\9": {
@@ -1609,7 +1609,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'composting-speed',
-      calc: () => 4,
+      calc: () => 40,
     }),
   },
   "F\\10": {
@@ -1622,7 +1622,7 @@ export const Upgrades: Record<string, {
       type: EffectType.Multiplier,
       static: true,
       group: 'seeds',
-      calc: () => 3,
+      calc: () => 30,
     }),
   },
   "F\\11": {
@@ -1655,7 +1655,7 @@ export const Upgrades: Record<string, {
     get description() { return `Leaves are increased by <b>${formatPercent(Decimal.sub(this.effect!.variables.base, 1))}</b> compounding per total fertilizer.` },
     branch: ["F\\6"],
 
-    cost: ['fruits', 1e4],
+    cost: ['fruits', 1e3],
 
     effect: new Effect({
       variables: {
@@ -1671,7 +1671,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(3)}</b> to Composting speed.` },
     branch: ["F\\12"],
 
-    cost: ['fruits', 2.5e4],
+    cost: ['fruits', 2.5e3],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1684,7 +1684,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(3)}</b> to Tree aging speed.` },
     branch: ["F\\9"],
 
-    cost: ['fruits', 7.5e4],
+    cost: ['fruits', 7.5e3],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1697,7 +1697,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(3)}</b> to Fruits.` },
     branch: ["F\\11"],
 
-    cost: ['fruits', 1e5],
+    cost: ['fruits', 1e4],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1710,7 +1710,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(10)}</b> to Leaves.` },
     branch: ["F\\16"],
 
-    cost: ['fruits', 4e5],
+    cost: ['fruits', 4e4],
 
     effect: new Effect({
       type: EffectType.Multiplier,
