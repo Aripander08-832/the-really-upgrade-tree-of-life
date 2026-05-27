@@ -1545,7 +1545,7 @@ export const Upgrades: Record<string, {
     get description() { return `Leaves give a boost to Tree aging speed.` },
     branch: ["F\\2"],
 
-    cost: ['fruits', 35],
+    cost: ['fruits', 15],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1571,13 +1571,13 @@ export const Upgrades: Record<string, {
     get description() { return `Unlock the third Composter.` },
     branch: ["F\\3"],
 
-    cost: ['fruits', 150],
+    cost: ['fruits', 20],
   },
   "F\\7": {
     get description() { return `<b>${formatMult(2)}</b> to Fruits.` },
     branch: ["F\\3"],
 
-    cost: ['fruits', 250],
+    cost: ['fruits', 25],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1590,7 +1590,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(2)}</b> to Tree aging speed.` },
     branch: ["F\\7"],
 
-    cost: ['fruits', 400],
+    cost: ['fruits', 40],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1603,7 +1603,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(4)}</b> to Composting speed.` },
     branch: ["F\\8"],
 
-    cost: ['fruits', 1e3],
+    cost: ['fruits', 100],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1616,7 +1616,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(3)}</b> to Seeds.` },
     branch: ["F\\8"],
 
-    cost: ['fruits', 1500],
+    cost: ['fruits', 150],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1629,7 +1629,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(1.5)}</b> to Fruits.` },
     branch: ["F\\8"],
 
-    cost: ['fruits', 2000],
+    cost: ['fruits', 200],
 
     effect: new Effect({
       type: EffectType.Multiplier,
@@ -1642,7 +1642,7 @@ export const Upgrades: Record<string, {
     get description() { return `<b>${formatMult(3)}</b> to Tree aging speed.` },
     branch: ["F\\8"],
 
-    cost: ['fruits', 7000],
+    cost: ['fruits', 700],
 
     effect: new Effect({
       type: EffectType.Multiplier,
